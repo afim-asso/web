@@ -1,0 +1,47 @@
+site_name: AFIM
+site_description: Association Francophone d'Informatique Musicale
+copyright: Copyright AFIM &copy; 2022
+nav:
+    - Asso: 
+        - 'Organisation': afim/organisation.md
+        - 'Adhérer': afim/adherer.md
+        - 'Contacts': afim/contact.md
+        - 'Liste de diffusion': afim/liste.md
+        - 'Ressources': afim/ressources.md
+    - Actions: 
+        - 'Revue': actions/revue.md
+        - 'JIM': actions/JIM.md
+        - 'SMC': actions/SMC.md
+        - 'Groupes de travail': actions/GT.md
+        - 'Aide à la publication': actions/aides.md
+        - 'Concours de logiciel': actions/concours.md
+        - 'Prix du jeune chercheur': actions/prixjc.md
+    - Informatique musicale: 
+        - 'Recherche': IM/recherche.md
+        - 'Formation': IM/formation.md
+        - 'Ressources': IM/ressources.md
+        - 'Projets': IM/projets.md
+
+#theme: readthedocs
+
+site_dir: ../docs
+
+extra:
+    social:
+        - type: github
+          link: https://github.com/afim-asso
+          link: https://www.afim-asso.org
+        - type: envelope
+          link: mailto:contact@afim-asso.org
+
+plugins:
+    - search
+
+extra_javascript:
+
+extra_css:
+   - '/css/afim.css'
+
+#markdown_extensions:
+#    - markdown_include.include:
+#        base_path: './docs'
