@@ -37,7 +37,7 @@ extra:
 plugins:
     - search
 
-extra_javascript:
+#extra_javascript:
 
 extra_css:
    - '/css/afim.css'

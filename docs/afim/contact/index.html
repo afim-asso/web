@@ -8,17 +8,14 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Ressources - AFIM</title>
+        <title>Contacts - AFIM</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <link href="/css/afim.css" rel="stylesheet">
-
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
     </head>
 
     <body>
@@ -34,11 +31,8 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../.." class="nav-link">Home</a>
-                            </li>
                             <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AFIM <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Asso <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
@@ -50,7 +44,7 @@
 </li>
                                     
 <li>
-    <a href="../contact/" class="dropdown-item">Contacts</a>
+    <a href="./" class="dropdown-item active">Contacts</a>
 </li>
                                     
 <li>
@@ -58,7 +52,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Ressources</a>
+    <a href="../ressources/" class="dropdown-item">Ressources</a>
 </li>
                                 </ul>
                             </li>
@@ -125,12 +119,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../liste/" class="nav-link">
+                                <a rel="prev" href="../adherer/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../../actions/revue/" class="nav-link">
+                                <a rel="next" href="../liste/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -152,12 +146,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#ressources" class="nav-link">Ressources</a>
+            <li class="nav-item" data-level="1"><a href="#contacts" class="nav-link">Contacts</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#logo" class="nav-link">Logo :</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -165,23 +155,29 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="ressources">Ressources</h1>
-<h2 id="logo">Logo :</h2>
-<p><img alt="AFIM logo" src="/imgs/afim_logo.png" /></p></div>
+<h1 id="contacts">Contacts</h1>
+<p>e-mail: contact@afim-asso.org</p>
+<p>Siège de l’association :</p>
+<pre><code>AFIM
+31 rue Berthomé
+33400 Talence
+</code></pre></div>
             </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright AFIM &copy; 2020</p>
+                <p>Copyright AFIM &copy; 2022</p>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
         <script>
             var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -191,16 +187,13 @@
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
+                <p>From here you can search these documents. Enter your search terms below.</p>
                 <form>
                     <div class="form-group">
                         <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
             </div>
             <div class="modal-footer">
             </div>
